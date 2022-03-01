@@ -1,6 +1,6 @@
 let inputBox = document.querySelector(".container input");
 let addBtn = document.querySelector(".container button");
-let todo = document.querySelector("#myUl")
+let todo = document.querySelector(".Ul")
 inputBox.onkeyup = () => {
     let userData = inputBox.value;//getting user entered data from user
     if (userData.trim() != 0) {
@@ -55,9 +55,10 @@ function deleteTask(index) {
     show();
 }
 
+
 var list = document.querySelector('ul');
-list.addEventListener('click', function(e) {
-  if (e.target.tagName === 'LI') {
-  e.target.classList.toggle('check');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+  ev.target.classList.toggle('checked');
   }
 }, false);

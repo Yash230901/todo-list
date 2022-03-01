@@ -32,22 +32,22 @@
     opacity: 1;
     pointer-events: auto;
 }
-#myUl li{
+.Ul li{
     color: yellow;
     list-style: none;
     background-color: #3789c2;
     padding: 1rem;
     font-size: 1.5rem;
     margin: 1rem;
-    padding-left: 3rem;
+    padding-left: 4rem;
     position: relative;
 }
-ul li.check{
-    background-color: crimson;
+ul li.checked {
+    background: grey;
     color: white;
     text-decoration: line-through;
   }
-  ul li.check::before {
+  ul li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
